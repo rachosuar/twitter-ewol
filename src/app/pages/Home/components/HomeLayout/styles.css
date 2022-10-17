@@ -1,0 +1,9 @@
+body,
+html {
+  background-color: #fff !important;
+}
+
+.tweets-list-container {
+  width: 600px !important;
+  margin: 20px auto;
+}

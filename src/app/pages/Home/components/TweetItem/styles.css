@@ -1,0 +1,87 @@
+.tweet-container {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+[placeholder]:empty::before {
+  content: attr(placeholder);
+  color: #555;
+}
+
+[placeholder]:empty:focus::before {
+  content: "";
+}
+
+.tweet-container:hover {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+.tweet-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.tweet-header > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  margin-right: 5px;
+}
+
+.tweet-header > span {
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.tweet-body {
+  width: 100%;
+  padding: 10px 40px;
+  box-sizing: border-box;
+}
+
+.tweet-container textarea {
+  border-width: 0px;
+  resize: none;
+  outline: none;
+  font-family: "Nunito";
+  font-size: 14px;
+  margin-top: 5px 0 10px;
+}
+
+.tweet-body > span {
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.tweet-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.tweet-footer > span {
+  font-family: "Nunito";
+  font-weight: 300;
+  font-size: 12px;
+  color: #555;
+  margin-right: 10px;
+}
