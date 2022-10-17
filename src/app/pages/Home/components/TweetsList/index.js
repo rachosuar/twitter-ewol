@@ -14,9 +14,9 @@ const TweetsList = ({ list = [], loading, error }) => {
 
   return (
     <div className="tweets-list-container">
-      {list.map((item, index) => (
-        <TweetItem key={index} {...item} />
-      ))}
+      {list.length
+        ? list.map((item, index) => <TweetItem key={index} {...item} />)
+        : "No hay ningun tweet, Se el primero en publicar!"}
     </div>
   );
 };
